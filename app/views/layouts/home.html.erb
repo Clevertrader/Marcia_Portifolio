@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <title>Erro - FOCO|Virtual</title>
+        <style type="text/css">
+            #background {background-color: black;}
+            #center     {background: url("/image/bg.jpg") repeat-y 0px 90px; width: 960px; height: 85%; margin: auto; margin-top: -15px;}
+            #top		{background: url("/image/logo.png"); width:312px; height:170px; margin-left: 40px;}
+            #bottom		{background-color: #1e1b1c; width: 960px; height: 15%; margin: auto;}
+            #link       {font-family:"Lucida Calligraphy"; font-size: 22px; color: #ee3680; padding: 10px 0 0 30px;}
+            .home    {color: #faf9f9;}
+        </style>
+    </head>
+    <body id="background">
+		<div id="center">
+			<div id="top"></div>
+            <%= yield %>
+		</div>
+		<div id="bottom">
+            <div id="link">
+                <% if current_page?(:action => 'index') %>
+                    <%= link_to "Home", root_path, :style => 'text-decoration: none; color: #faf9f9; padding-left:10px;' %>
+                <% else %>
+                    <%= link_to "Home", root_path, :style => 'text-decoration: none; color: #ee3680; padding-left:10px;'%>
+                <% end%>
+
+                <% if current_page?(:action => 'portifolio') %>
+                    <%= link_to "Portifólio", portifolio_path, :style => 'text-decoration: none; color: #faf9f9; padding-left:10px;' %>
+                <% else %>
+                    <%= link_to "Portifólio", portifolio_path, :style => 'text-decoration: none; color: #ee3680; padding-left:10px;'%>
+                <% end%>
+
+                <% if current_page?(:action => 'contato') %>
+                    <%= link_to "Contato", contato_path, :style => 'text-decoration: none; color: #faf9f9; padding-left:10px;' %>
+                <% else %>
+                    <%= link_to "Contato", contato_path, :style => 'text-decoration: none; color: #ee3680; padding-left:10px;' %>
+                <% end%>
+            </div>
+        </div>
