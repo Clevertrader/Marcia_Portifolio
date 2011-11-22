@@ -1,0 +1,42 @@
+#box{
+	
+	width: 800px;
+	height: 301px;
+
+	#contato {
+		width: 300px;
+		height: 300px;
+		border: 1px solid #ee3680;
+		background-color: #1e1b1c;
+		margin-left: 40px;
+		float: left;
+		border-radius: 10px; 
+
+		.text{
+			font-family: "Arial"; 
+			font-size: 19px; 
+			color: #faf9f9;
+			padding: 15px;
+			text-align: left;
+		}
+	}
+
+	#form {
+		width: 300px;
+		height: 300px;
+		border: 1px solid #ee3680;
+		background-color: #1e1b1c;
+		float: right;
+		border-radius: 10px;
+
+		.text{
+			font-family: "Arial"; 
+			font-size: 19px; 
+			color: #ee3680;
+			padding: 15px;
+			text-align: left;
+		}
+	}
+}
+
+

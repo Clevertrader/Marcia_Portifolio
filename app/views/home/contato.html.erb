@@ -1,1 +1,32 @@
-contato
+<%= stylesheet_link_tag "contato.css.scss" %>
+<div id="box">
+	<div id="contato">
+		<div class="text">
+			<br>
+			Caso tenha gostado de meus trabalhos e queira entrar em contato, você pode enviar por email ou mensagem.
+			<br><br>
+			marcia@marciagongora.com
+			<br><br>
+			Responderei o mais rápido possível.
+		</div>	
+	</div>
+
+	<div id="form">
+		<div class="text">
+			Nome
+			<br>
+			<input type="text" size="48">
+			<br><br>
+			Email
+			<br>
+			<input type="text" size="48">
+			<br><br>
+			Mensagem
+			<br>
+			<textarea name="mensagens" cols="35" rows="5"></textarea>
+			<br>
+			<input type="submit" onClick="alert('Mensagem enviada com sucesso!'); window.location.reload()" style='margin-top: 15px;'>
+		</div>
+
+	</div>
+</div>

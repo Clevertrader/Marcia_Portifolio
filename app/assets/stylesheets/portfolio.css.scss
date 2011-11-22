@@ -1,0 +1,16 @@
+#portfolio {
+	width: 300px;
+	height: 300px;
+	border: 1px solid #ee3680;
+	background-color: #1e1b1c;
+	margin-left: 40px;
+	border-radius: 10px; 
+
+	.text{
+		font-family:"Lucida Calligraphy";
+		font-size: 22px;
+		color: #ee3680;
+		text-align: left;
+		padding: 15px;
+	}
+}
