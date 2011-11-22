@@ -7,6 +7,12 @@ class HomeController < ApplicationController
 	def portfolio
 	end
 
+	def fotografia
+	end
+
+	def editorial
+	end
+
 	def contato
 	end
 end

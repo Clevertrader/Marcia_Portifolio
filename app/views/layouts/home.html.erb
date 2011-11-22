@@ -4,9 +4,9 @@
         <title>Marcia Gongora - Designer</title>
         <style type="text/css">
             #background {background-color: black;}
-            #center     {background: url("/image/bg.jpg") repeat-y 0px 90px; width: 960px; height: 85%; margin: auto; margin-top: -15px;}
+            #center     {background: url("/image/bg.jpg") repeat-y 0px 90px; width: 960px; height: 480px; margin: auto; margin-top: -15px;}
             #top		{background: url("/image/logo.png"); width:312px; height:170px; margin-left: 40px;}
-            #bottom		{background-color: #1e1b1c; width: 960px; height: 15%; margin: auto;}
+            #bottom		{background-color: #1e1b1c; width: 960px; height: 80px; margin: auto;}
             #link       {font-family:"Lucida Calligraphy"; font-size: 22px; color: #ee3680; padding: 10px 0 0 30px;}
             .home    {color: #faf9f9;}
         </style>
@@ -24,7 +24,7 @@
                     <%= link_to "Home", root_path, :style => 'text-decoration: none; color: #ee3680; padding-left:10px;'%>
                 <% end%>
 
-                <% if current_page?(:action => 'portfolio') %>
+                <% if current_page?(:action => 'portfolio') or current_page?(:action => 'fotografia') or current_page?(:action => 'editorial') %>
                     <%= link_to "Portfólio", portfolio_path, :style => 'text-decoration: none; color: #faf9f9; padding-left:10px;' %>
                 <% else %>
                     <%= link_to "Portfólio", portfolio_path, :style => 'text-decoration: none; color: #ee3680; padding-left:10px;'%>
