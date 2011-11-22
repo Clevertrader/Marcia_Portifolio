@@ -1,5 +1,5 @@
 Marcinha::Application.routes.draw do
   root :to => 'home#index'
-    get 'portifolio' => 'home#portifolio'
+    get 'portfolio' => 'home#portfolio'
     get 'contato' => 'home#contato'
 end

@@ -4,7 +4,7 @@ class HomeController < ApplicationController
 	def index
 	end
 
-	def portifolio
+	def portfolio
 	end
 
 	def contato

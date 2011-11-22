@@ -24,10 +24,10 @@
                     <%= link_to "Home", root_path, :style => 'text-decoration: none; color: #ee3680; padding-left:10px;'%>
                 <% end%>
 
-                <% if current_page?(:action => 'portifolio') %>
-                    <%= link_to "Portifólio", portifolio_path, :style => 'text-decoration: none; color: #faf9f9; padding-left:10px;' %>
+                <% if current_page?(:action => 'portfolio') %>
+                    <%= link_to "Portfólio", portfolio_path, :style => 'text-decoration: none; color: #faf9f9; padding-left:10px;' %>
                 <% else %>
-                    <%= link_to "Portifólio", portifolio_path, :style => 'text-decoration: none; color: #ee3680; padding-left:10px;'%>
+                    <%= link_to "Portfólio", portfolio_path, :style => 'text-decoration: none; color: #ee3680; padding-left:10px;'%>
                 <% end%>
 
                 <% if current_page?(:action => 'contato') %>
